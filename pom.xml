@@ -120,7 +120,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>Team10CucumberProject</projectName>
+                            <projectName>   <c>CampusMatesProjectE2E</c></projectName>
                             <outputDirectory>${project.build.directory}</outputDirectory>
                             <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
