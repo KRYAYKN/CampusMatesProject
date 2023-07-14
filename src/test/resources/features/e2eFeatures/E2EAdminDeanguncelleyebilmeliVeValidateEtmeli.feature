@@ -1,4 +1,4 @@
-@e2e
+
 Feature: Admin can add dean
   #UI PART
   Background:
@@ -6,7 +6,7 @@ Feature: Admin can add dean
     Then User validate that he is on the admin management page
     And User click admin menu button
     And User click dean management button
-
+  @e2e
   Scenario: Admin can add dean e2e
 
     And User enters name in the name textbox

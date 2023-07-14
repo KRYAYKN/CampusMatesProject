@@ -2,7 +2,6 @@ package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
@@ -16,15 +15,12 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
         monochrome = true,
-        features = "src/test/resources/features/uiFeatures",
+        features = "src/test/resources/features/e2eFeatures",
         glue = {"stepdefinitions", "hooks"},
-        tags = "",
+        tags = "@e2e",
         dryRun = false
 
 
 )
-
-
-public class UiRunner {
-
+public class E2eRunner {
 }

@@ -2,11 +2,13 @@ package stepdefinitions.e2eStepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class AdminDeanEkleyebilmeli {
     @Given("User login as an admin")
     public void user_login_as_an_admin() {
-
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
     }
     @Then("User validate that he is on the admin management page")
     public void user_validate_that_he_is_on_the_admin_management_page() {

@@ -10,10 +10,10 @@ import utilities.Driver;
 import static base_url.ProjectBaseUrl.schoolAdminSetup;
 
 public class Hooks {
-    @Before("@api")
-    public void setUpApi(){
-        schoolAdminSetup();
-    }
+//    @Before("@api")
+//    public void setUpApi(){
+//        schoolAdminSetup();
+//    }
     @After
     public void tearDownScenario(Scenario scenario){
        if(scenario.isFailed()){
